@@ -9,13 +9,10 @@ const obj = {
 
 function flatten(obj, parentKey = "", result = {}) {
   for (let key in obj) {
-
     let newKey = parentKey ? parentKey + "." + key : key;
-
     if (typeof obj[key] === "object" && obj[key] !== null) {
       flatten(obj[key], newKey, result);
     } 
-
     else {
       result[newKey] = obj[key];
     }

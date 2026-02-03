@@ -10,6 +10,7 @@ const unique = arr.reduce((acc, curr) => {
 
 console.log(unique);
 
+//////////////////////////////////////////
 
 const arr1 = [1, 2, 2, 3, 4, 4, 5];
 let seen2 = {};

@@ -22,3 +22,17 @@ const unique2 = Array.from(
 );
 
 console.log(unique2);
+
+//////////////////////////////////////////////////
+
+let seen2 = {};
+let unique3 = [];
+
+for (let item of arr) {
+  if (!seen2[item.id]) {
+    seen2[item.id] = true;
+    unique3.push(item);
+  }
+}
+
+console.log(unique3);
